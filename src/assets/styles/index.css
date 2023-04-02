@@ -1,3 +1,16 @@
+
+
+:root{
+  --color-primary-green: #76b72a;
+  --color-primary-yellow: #e6ba04;
+  --color-primary-yellow-2: #ffcc33;
+  --color-primary-yellow-3: #f8a655;
+  --bg-gradiant-primary:  linear-gradient(90deg, var(--color-primary-yellow)  0%,  var(--color-primary-green) 100%);
+};
+  
+
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

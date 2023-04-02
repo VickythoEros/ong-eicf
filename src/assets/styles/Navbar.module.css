@@ -1,0 +1,22 @@
+
+
+
+ul{
+    list-style: none ;
+    text-transform: uppercase;
+    display: flex;
+    font-weight: bolder;
+}
+
+li{
+    margin: 0 5px;
+    font-weight: bolder;
+    font-size: 11px;
+}
+
+.navbar_divider{
+    display: block;
+    height: 5px;
+    background: var(--color-primary-yellow);
+    background: var(--bg-gradiant-primary);
+}
