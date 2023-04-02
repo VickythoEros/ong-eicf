@@ -18,3 +18,17 @@ button.app-button:hover {
     box-shadow: none;
     color: #fff;
   }
+
+button.donate-button{
+    border-radius: 100rem;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    color: #fff;
+    background-color: var(--color-primary-yellow-2);
+}
+button.donate-button:hover{
+    background-color: var(--color-primary-yellow-3);
+
+}

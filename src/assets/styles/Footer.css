@@ -1,0 +1,70 @@
+
+.footer .contacts p span {
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+
+.footer .links .who-us p{
+    color: var(--color-primary-yellow-3);
+    font-weight: bolder;
+}
+
+
+
+.footer .links {
+    text-align: center;
+}
+
+
+.footer .links .who-us ul{
+    display: block;
+    text-align: center;
+}
+
+
+.footer .links .who-us ul li{
+    margin: 1rem 0rem;
+}
+
+.footer .informations{
+    background-color: var(--color-primary-yellow-2);
+    padding: 3rem;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+}
+
+.footer .informations .inputs{
+    background-color: var(--color-primary-yellow-3);
+    display: flex;
+    border-radius:5000px;
+    -webkit-border-radius:5000px;
+    -moz-border-radius:5000px;
+    -ms-border-radius:5000px;
+    -o-border-radius:5000px;
+}
+
+.footer .informations .inputs input{
+    border-radius:5000px;
+    height: 2.7rem;
+    padding-left: 1rem;
+    -webkit-border-radius:5000px;
+    -moz-border-radius:5000px;
+    -ms-border-radius:5000px;
+    -o-border-radius:5000px;
+}
+
+.footer .informations .inputs button{
+    display: block;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: bolder;
+    border-radius:5000px ;
+    font-size: 0.8rem;
+    -webkit-border-radius:5000px ;
+    -moz-border-radius:5000px ;
+    -ms-border-radius:5000px ;
+    -o-border-radius:5000px ;
+}
