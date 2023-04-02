@@ -1,12 +1,23 @@
-import Layout from 'components/Layout';
+
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import Home from 'views/Home';
+
 import 'assets/styles/App.css';
 
 function App() {
+
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Home />,
+    },
+  ]);
+
   return (
-    <Layout>
-      <div className="App">
-      </div>
-    </Layout>
+    <RouterProvider router={router} />
   );
 }
 
