@@ -1,0 +1,67 @@
+
+.card-action{
+    border-radius: 1rem;
+    transition:all 0.5s ease-in-out;
+    padding: 1rem;
+    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+    border: solid 3px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, var(--color-primary-yellow), var(--color-primary-green));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #fff inset;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -ms-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+}
+
+.card-action:hover{
+    background: #fff;
+    box-shadow: 2px 1000px 1px var(--color-primary-green)inset;
+    cursor: pointer;
+}
+
+
+.card-action:hover .card-action-head p{
+    color: #fff;
+}
+
+
+.card-action-image-container img{
+    height: 18rem;
+}
+
+.card-action-body{
+    margin-bottom: 3rem;
+}
+.card-action-body p{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical; 
+    overflow: hidden;
+  
+}
+
+.card-action-head h4{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #000;
+}
+
+.card-action-head p{
+    font-size: 14px;
+    font-weight: bolder;
+    color: var(--color-primary-yellow);
+}
+
+
+.card-link{
+    border-bottom: 3px solid var(--color-primary-yellow-3);
+    font-weight: bold;
+    font-style: 14px;
+    
+}

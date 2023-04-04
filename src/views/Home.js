@@ -1,23 +1,10 @@
 import Layout from 'components/Layout';
 import AppButton from 'components/AppButton';
-import logo from "assets/images/logo_ong_eicf.png"
 import 'assets/styles/Home.css';
+import CardAction from 'components/CardAction';
 
 
 
-
-const CardAction =  ()=>{
-
-    return(
-        <div className="card-action">
-            <div className="card-action-image-container">
-                <img src={logo} alt="ONG EICF" className="img-fluid mx-auto w-100" style={{height:'15rem'}} />
-            </div>
-            <div className="card-action-body">
-            </div>
-        </div>
-    )
-}
 
 const Home = ()=> {
   return (
@@ -66,7 +53,7 @@ const Home = ()=> {
             <div className="col-md-4">
                 <CardAction />
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4" style={{background:"var(--color-primary-green)"}} >
                 <CardAction />
             </div>
         </div>
