@@ -2,6 +2,7 @@ import Layout from 'components/Layout';
 import AppButton from 'components/AppButton';
 import 'assets/styles/Home.css';
 import CardAction from 'components/CardAction';
+import cardImg  from 'assets/images/card_img.jpeg';
 
 
 
@@ -53,11 +54,46 @@ const Home = ()=> {
             <div className="col-md-4">
                 <CardAction />
             </div>
-            <div className="col-md-4" style={{background:"var(--color-primary-green)"}} >
+            <div className="col-md-4"  >
                 <CardAction />
             </div>
         </div>
+        <div className="row jusitfy-content-evenly align-items-center text-center mt-3 mt-md-5">
+            <div className="col-md-8 ">
+                <AppButton title="Toutes les actualiés" />
+            </div>
+            <div className="col-md-4">
+                <AppButton title="Actu des réseaux" />
+            </div>
 
+        </div>
+      </div>
+      
+      <div className="our-fights-section mt-3 mt-md-5">
+        <div className="row justify-content-center align-items-center text-center">
+            <div className="col-md-9">
+                <h1 className="fw-bolder">
+                    nos combats contre la pauvrété
+                </h1>
+                <p className="mt-2">
+                    Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur 
+                </p>
+            </div>
+        </div>
+        <div className="row justify-content-center align-items-center">
+            <div className="col-md-4">
+                <div 
+                    className="our-fights-card"
+                    style={{
+                        backgroundImage:`linear-gradient(to bottom, rgba(146, 139, 139, 0.452), rgba(0, 0, 0, 0.904)),url(${cardImg})`
+                    }}
+                 >
+                    <h2>
+                        luttons contre le rechauffement climatique
+                    </h2>
+                </div>
+            </div>
+        </div>
       </div>
     </Layout>
   );
