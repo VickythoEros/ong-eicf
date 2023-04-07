@@ -11,6 +11,7 @@ import logo from "assets/images/logo_ong_eicf.png"
 
 import styles from 'assets/styles/Navbar.module.css';
 import AppButton from './AppButton';
+import { Link } from 'react-router-dom';
 
 export default function Navbar(){
 
@@ -39,11 +40,9 @@ export default function Navbar(){
                                     QUI SOMMES NOUS 
                                 </MenuButton>
                                 <MenuList>
-                                    <MenuItem>Download</MenuItem>
-                                    <MenuItem>Create a Copy</MenuItem>
-                                    <MenuItem>Mark as Draft</MenuItem>
-                                    <MenuItem>Delete</MenuItem>
-                                    <MenuItem>Attend a Workshop</MenuItem>
+                                    <MenuItem>nous</MenuItem>
+                                    <MenuItem>nous</MenuItem>
+                                    <MenuItem>nous</MenuItem>
                                 </MenuList>
                             </Menu>
                             <Menu>
@@ -51,11 +50,11 @@ export default function Navbar(){
                                     NOS ACTIONS
                                 </MenuButton>
                                 <MenuList>
-                                    <MenuItem>Download</MenuItem>
-                                    <MenuItem>Create a Copy</MenuItem>
-                                    <MenuItem>Mark as Draft</MenuItem>
-                                    <MenuItem>Delete</MenuItem>
-                                    <MenuItem>Attend a Workshop</MenuItem>
+                                    <MenuItem as={Link} to='/actions'>
+                                        Actions
+                                    </MenuItem>
+                                    <MenuItem>Action 2</MenuItem>
+                                    <MenuItem>Action 2</MenuItem>
                                 </MenuList>
                             </Menu>
                             <Menu>
@@ -63,11 +62,9 @@ export default function Navbar(){
                                     NOS PROJETS
                                 </MenuButton>
                                 <MenuList>
-                                    <MenuItem>Download</MenuItem>
-                                    <MenuItem>Create a Copy</MenuItem>
-                                    <MenuItem>Mark as Draft</MenuItem>
-                                    <MenuItem>Delete</MenuItem>
-                                    <MenuItem>Attend a Workshop</MenuItem>
+                                    <MenuItem>Projets</MenuItem>
+                                    <MenuItem>Projets</MenuItem>
+                                    <MenuItem>Projets</MenuItem>
                                 </MenuList>
                             </Menu>
                         </div>

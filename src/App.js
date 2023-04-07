@@ -1,6 +1,7 @@
 
 import {createBrowserRouter,RouterProvider} from "react-router-dom";
 import Home from 'views/Home';
+import Actions from "views/Actions";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -12,6 +13,10 @@ function App() {
     {
       path: "/",
       element: <Home />,
+    },
+    {
+      path: "/actions",
+      element: <Actions />,
     },
   ]);
 
