@@ -1,0 +1,28 @@
+
+.header{
+
+    background-image:
+    linear-gradient(to left, rgba(146, 139, 139, 0.452), rgba(0, 0, 0, 0.904)),
+    url(assets/images/logo_ong_eicf.png);
+    padding: 4rem;
+    margin-top: 3rem;
+    color: #fff;
+    border-radius: 2rem ;
+    -webkit-border-radius: 2rem ;
+    -moz-border-radius: 2rem ;
+    -ms-border-radius: 2rem ;
+    -o-border-radius: 2rem ;
+}
+
+.header h1{
+    font-size: 45px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bolder;
+}
+
+
+.header p{
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+}

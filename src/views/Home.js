@@ -9,6 +9,7 @@ import cardImg3  from 'assets/images/card_img3.jpeg';
 import OurFightCard from "components/OurFightCard";
 import 'assets/styles/Home.css';
 import MySlider from 'components/MySlider';
+import AppHeader from 'components/AppHeader';
 
 
 
@@ -36,19 +37,10 @@ const Home = ()=> {
       ];
   return (
     <Layout>
-      <div className="header">
-        <div className="row">
-            <div className="col-md-6">
-                <h1 className="fw-bolder text-white " >
-                    Ensemble luttons contre les inégalités
-                </h1>
-                <p className="mt-2">
-                    Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que 
-                </p>
-                <AppButton title="Nous connaitre" />
-            </div>
-        </div>
-      </div>
+        <AppHeader
+            title="Ensemble luttons contre les inégalités"
+            content="Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que "
+         />
       <div className="row justify-content-end header-card-main ">
         <div className="col-md-5  hearder-card">
             <h2> Depuis 16 ans notre action compte</h2>
@@ -67,13 +59,22 @@ const Home = ()=> {
       <div className="card-sections">
         <div className="row jusitfy-content-between align-items-center ">
             <div className="col-md-4">
-                <CardAction />
+                <CardAction 
+                    title="lorem ipsum "
+                    text=" Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla"
+                 />
             </div>
             <div className="col-md-4">
-                <CardAction />
+                <CardAction 
+                    title="lorem ipsum "
+                    text=" Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla"
+                 />
             </div>
             <div className="col-md-4"  >
-                <CardAction />
+                <CardAction 
+                    title="lorem ipsum "
+                    text=" Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla"
+                 />
             </div>
         </div>
         <div className="row jusitfy-content-evenly align-items-center text-center mt-3 mt-md-5">

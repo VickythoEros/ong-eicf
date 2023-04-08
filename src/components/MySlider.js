@@ -33,7 +33,7 @@ const MySlider = (props) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 500,
+    autoplaySpeed: 3000,
   };
 
   const slides = props.slides.map((slide, index) => {

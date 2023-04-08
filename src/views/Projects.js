@@ -5,7 +5,7 @@ import "assets/styles/Actions.css"
 const { default: Layout } = require("components/Layout")
 
 
-const Actions = ()=>{
+const Projects = ()=>{
 
     return(
         <Layout>
@@ -22,38 +22,47 @@ const Actions = ()=>{
                 <h1>Nos Actions</h1>
                 <div className="">
                     <CardAction 
+                        link="/projects-details"
                         title="lorem ipsum "
                         text=" Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla"
                     />
                     <CardAction 
+                        link="/projects-details"
                         title="lorem ipsum "
                         text=" Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla"
                     />
                     <CardAction 
+                        link="/projects-details"
                         title="lorem ipsum "
                         text=" Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla"
                     />
                     <CardAction 
+                        link="/projects-details"
                         title="lorem ipsum "
                         text=" Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla"
                     />
                     <CardAction 
+                        link="/projects-details"
                         title="lorem ipsum "
                         text=" Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla"
                     />
                     <CardAction 
+                        link="/projects-details"
                         title="lorem ipsum "
                         text=" Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla"
                     />
                     <CardAction 
+                        link="/projects-details"
                         title="lorem ipsum "
                         text=" Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla"
                     />
                     <CardAction 
+                        link="/projects-details"
                         title="lorem ipsum "
                         text=" Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla"
                     />
                     <CardAction 
+                        link="/projects-details"
                         title="lorem ipsum "
                         text=" Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla"
                     />
@@ -64,4 +73,4 @@ const Actions = ()=>{
     )
 }
 
-export default Actions
+export default Projects

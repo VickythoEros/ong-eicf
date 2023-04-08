@@ -8,12 +8,12 @@
 }
 
 .slide-content .slide-card{
-    background-color: #f2ffe8;
+    background-color: var(--color-primary-green-2);
     position: relative;
 }
 
 .slide-text-content .slide-card{
-    background-color: #f2ffe8;
+    background-color: var(--color-primary-green-2);
     padding: 1.4rem;
     position: absolute;
     display: block;

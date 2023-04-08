@@ -62,7 +62,9 @@ export default function Navbar(){
                                     NOS PROJETS
                                 </MenuButton>
                                 <MenuList>
-                                    <MenuItem>Projets</MenuItem>
+                                    <MenuItem as={Link} to='/projects'>
+                                        Projets
+                                    </MenuItem>
                                     <MenuItem>Projets</MenuItem>
                                     <MenuItem>Projets</MenuItem>
                                 </MenuList>

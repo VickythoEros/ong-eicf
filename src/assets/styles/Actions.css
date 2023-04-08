@@ -1,0 +1,17 @@
+
+.actions-list-container{
+    margin-top: 7rem;
+    margin-bottom: 8rem;
+}
+
+.actions-list-container h1{
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+
+.actions-list-container>div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 3rem;
+}
