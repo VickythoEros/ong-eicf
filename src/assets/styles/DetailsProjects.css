@@ -1,0 +1,25 @@
+
+.divider{
+    height: 3px;
+    margin: 1rem 0rem;
+    width: auto;
+    display: block;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, var(--color-primary-yellow), var(--color-primary-green));
+}
+
+
+.green-square-container{
+    border-right: 3px solid var(--color-primary-yellow-3);
+}
+
+.green-square{
+    height: 10rem;
+    width: 100%;
+    display: block;
+    background-color:  var(--color-primary-green);
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}

@@ -2,7 +2,7 @@ import "assets/styles/AppHeader.css"
 const { default: AppButton } = require("./AppButton")
 
 
-const AppHeader =({content,title})=>{
+const AppHeader =({content,title,showButton=true})=>{
 
 
     return (
@@ -11,7 +11,7 @@ const AppHeader =({content,title})=>{
                 <div className="col-md-7">
                     <h1>{title}</h1>
                     <p> {content} </p>
-                    <AppButton title="Nous connaitre" />
+                    { showButton && <AppButton title="Nous connaitre" />}
                 </div>
             </div>
         </div>
