@@ -2,7 +2,10 @@
 
 .slide-content .slide-text-content{
     display: flex;
-    align-items: end;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    align-items: flex-end;
     position: relative;
 
 }
