@@ -9,6 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 import 'assets/styles/App.css';
 import Projects from "views/Projects";
 import DetailsProjects from "views/DetailsProjects";
+import WhoUs from "views/WhoUs";
 
 function App() {
 
@@ -32,6 +33,10 @@ function App() {
     {
       path: "/projects-details",
       element: <DetailsProjects />,
+    },
+    {
+      path: "/who-us",
+      element: <WhoUs />,
     },
   ]);
 

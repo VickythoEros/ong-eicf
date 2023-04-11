@@ -7,6 +7,7 @@ import InterventionsContries from "components/InterventionsContries"
 import { MapContainer, TileLayer, Marker,Popup } from 'react-leaflet'
 import { Avatar,WrapItem } from '@chakra-ui/react'
 import { Link } from 'react-router-dom';
+import OurMissionCard from 'components/OurMissionCard';
 const { default: Layout } = require("components/Layout")
 
 
@@ -55,22 +56,6 @@ const TeamCard=({personName,personInfo})=>{
     )
 }
 
-
-const OurMissionCard =  ({imageSrc})=>{
-
-    return(
-        <div 
-            className="our-mission-card mt-4 mt-md-2 shadow-4"
-            style={{
-                backgroundImage:`linear-gradient(to bottom, rgba(200, 200, 200, 0), rgba(200, 200, 200,0), rgba(0, 0, 0, 0.99)),url(${imageSrc})`
-            }}
-         >
-            <div className="our-mission-card-body">
-                <Link className="mission-card-link" to={"#"}> Notre mission </Link>
-            </div>
-        </div>
-    )
-}
 
 const DetailsProjects =()=>{
     const image = 'https://placeimg.com/640/480/tech'
@@ -196,7 +181,7 @@ const DetailsProjects =()=>{
 
             <div className="join-us-section">
                 <h2 className="mb-4 text-uppercase text-center fw-bolder">
-                    Réjoinz-nous
+                    Réjoignez-nous
                 </h2>
                 <div className="join-us-missions-container">
                     <OurMissionCard 
@@ -214,7 +199,7 @@ const DetailsProjects =()=>{
                     <OurMissionCard 
                         imageSrc={image}
                     />
-                    <OurMissionCard 
+                    <OurMissionCard
                         imageSrc={image}
                     />
                 </div>

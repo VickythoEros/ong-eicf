@@ -40,7 +40,9 @@ export default function Navbar(){
                                     QUI SOMMES NOUS 
                                 </MenuButton>
                                 <MenuList>
-                                    <MenuItem>nous</MenuItem>
+                                    <MenuItem as={Link} to='/who-us'>
+                                        Qui sommes nous ?
+                                    </MenuItem>
                                     <MenuItem>nous</MenuItem>
                                     <MenuItem>nous</MenuItem>
                                 </MenuList>
