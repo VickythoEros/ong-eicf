@@ -6,7 +6,7 @@
 }
 
 
-/*  details-actions  */
+/*  details-actions header  */
 .details-actions-header{
     background-image:
     linear-gradient(to bottom, rgba(146, 139, 139, 0.452), rgba(0, 0, 0, 0.849), rgb(0, 0, 0)),
@@ -35,7 +35,7 @@
 .details-actions-header .details-actions-text p{
     margin-top: 2rem;
 }
-/* End details-actions  */
+/* End details-actions header */
 
 
 

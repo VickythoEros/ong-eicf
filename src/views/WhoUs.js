@@ -5,6 +5,7 @@ import { FaRegStar } from 'react-icons/fa';
 import { BsFacebook,BsGoogle } from 'react-icons/bs';
 import OurMissionCard from "components/OurMissionCard";
 import MySlider from "components/MySlider";
+import AppButton from "components/AppButton";
 
 
 const WhoUs = ()=>{
@@ -151,7 +152,7 @@ const WhoUs = ()=>{
                 </div>
             </div>
 
-            <div className="">
+            <div className="specific-objectif">
                 <h1 className="fw-bolder text-center pt-5 pt-4">
                     Objectifs specifiques
                 </h1>
@@ -186,6 +187,83 @@ const WhoUs = ()=>{
                     <div className="col-md-6 my-3 text-center">
                         <div className="slide-img-content">
                             <img className="img-fluid" src={image} alt="objectif img" />
+                        </div>
+                    </div>
+                </div>
+
+                <div className="specific-objectif-header">
+                    <div className="row justify-content-center align-items-center mx-auto">
+                        <div className="col-md-10">
+                            <h1>
+                                Le Lorem Ipsum est simplement du faux texte 
+                            </h1>
+                            <div className="specific-objectif-header-text">
+                                <p> 
+                                    Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur   anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que 
+                                </p>
+                                <p> 
+                                    Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que 
+                                </p> 
+                                <p> 
+                                    Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que 
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="our-worth">
+                <div className="">
+                    <h1 className="fw-bolder text-center pt-5 pt-4">
+                        Valeurs de l'ONG EICF
+                    </h1>
+                    <p>
+                        Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que 
+                        Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de <span className="span-colored">composition et la mise en page avant impression.</span> quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que 
+                    </p>
+                </div>
+
+                <div className="our-worth-mission-indicator ">
+                    <div className="container">
+                        <div className="d-flex justify-content-center align-items-stretch">
+                            <div className="our-worth-mission-indicator-style"></div>
+                            <p className="our-worth-mission-indicator-text" >
+                                Le Lorem Ipsum est simplement du faux texte employé dans .<span className="span-colored">composition et la mise en page avant impression.</span> Le Lorem 
+                                Le Lorem Ipsum est simplement du faux texte employé dans Le Lorem 
+                                Le Lorem Ipsum est simplement du faux texte employé dans Le Lorem 
+                                Le Lorem Ipsum est simplement du faux texte employé dans 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div className="show-more">
+                    <div className="text-center mb-md-5 mb-3">
+                        <AppButton title="Accueil" />
+                    </div>
+                    <div className="show-more-content">
+                        <h1 className="fw-bolder text-white text-center pt-5 pt-4">
+                            En savoir plus surl'ONG EICF
+                        </h1>
+
+                        <div className="col my-3">
+                            <div className="row justify-content-between">
+                                <div className="col-md-4">
+                                    <OurMissionCard imageSrc={image} linkText="Nos missons" />
+                                </div>
+                                <div className="col-md-4">
+                                    <OurMissionCard imageSrc={image} linkText="Notre objectifs" />
+                                </div>
+                                <div className="col-md-4">
+                                    <OurMissionCard imageSrc={image}linkText="Nos valeurs" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="d-flex align-items-stretch">
+                            <button className="show-more-report-button" >
+                                    voir tous nos rapports
+                            </button>
+                            
                         </div>
                     </div>
                 </div>
