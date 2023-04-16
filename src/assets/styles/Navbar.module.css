@@ -1,5 +1,9 @@
 
-
+ nav  .nav-logo-container{
+    height: 5rem;
+    width: 2rem;
+    display: none !important;
+ }
 
 ul{
     list-style: none ;
@@ -17,6 +21,5 @@ li{
 .navbar_divider{
     display: block;
     height: 5px;
-    background: var(--color-primary-yellow);
     background: var(--bg-gradiant-primary);
 }

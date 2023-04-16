@@ -1,15 +1,14 @@
 
 
-import Layout from 'components/Layout';
 import AppButton from 'components/AppButton';
 import CardAction from 'components/CardAction';
 import cardImg  from 'assets/images/card_img.jpeg';
 import cardImg2  from 'assets/images/cardImg2.jpg';
 import cardImg3  from 'assets/images/card_img3.jpeg';
 import OurFightCard from "components/OurFightCard";
-import 'assets/styles/Home.css';
 import MySlider from 'components/MySlider';
 import AppHeader from 'components/AppHeader';
+import 'assets/styles/Home.css';
 
 
 
@@ -36,7 +35,7 @@ const Home = ()=> {
         },
       ];
   return (
-    <Layout>
+    <>
         <AppHeader
             title="Ensemble luttons contre les inégalités"
             content="Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que "
@@ -164,7 +163,7 @@ const Home = ()=> {
             <MySlider slides={slides} />
         </div>
       </div>
-    </Layout>
+    </>
   );
 }
 

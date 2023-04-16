@@ -1,7 +1,6 @@
 import "assets/styles/DetailsActions.css"
 import ActivityHeader from "components/ActivityHeader"
 import { useState } from "react"
-const { default: Layout } = require("components/Layout")
 
 const OtherMissionCard = ({title,text,image})=>{
     const [mouseHover,setMouseHover] = useState(false)
@@ -40,7 +39,7 @@ const DetailsActions = ()=>{
     const image = 'https://placeimg.com/640/480/tech'
 
     return(
-        <Layout>
+        <>
             <div className="details-actions-header">
                 <div className="row justify-content-center align-items-center mx-auto">
                     <div className="col-md-10">
@@ -134,7 +133,7 @@ const DetailsActions = ()=>{
                     content="Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que "
                 />
             </div>
-        </Layout>
+        </>
     )
 }
 

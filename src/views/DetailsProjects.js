@@ -1,14 +1,12 @@
 
 
 import { useRef } from 'react';
-import AppHeader from "components/AppHeader"
-import "assets/styles/DetailsProjects.css"
-import InterventionsContries from "components/InterventionsContries"
 import { MapContainer, TileLayer, Marker,Popup } from 'react-leaflet'
-import { Avatar,WrapItem } from '@chakra-ui/react'
-import { Link } from 'react-router-dom';
+import AppHeader from "components/AppHeader"
+import InterventionsContries from "components/InterventionsContries"
 import OurMissionCard from 'components/OurMissionCard';
-const { default: Layout } = require("components/Layout")
+
+import "assets/styles/DetailsProjects.css"
 
 
 
@@ -61,7 +59,7 @@ const DetailsProjects =()=>{
     const image = 'https://placeimg.com/640/480/tech'
 
     return(
-        <Layout>
+        <>
             <AppHeader
                 showButton={false}
                 title="NOUS CONNAITRE "
@@ -205,7 +203,7 @@ const DetailsProjects =()=>{
                 </div>
             </div>
             
-        </Layout>
+        </>
     )
 }
 

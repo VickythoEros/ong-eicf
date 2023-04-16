@@ -1,11 +1,12 @@
-import Layout from "components/Layout"
-import "assets/styles/WhoUs.css"
+
 import { List,  ListItem,  ListIcon,IconButton } from '@chakra-ui/react'
 import { FaRegStar } from 'react-icons/fa';
 import { BsFacebook,BsGoogle } from 'react-icons/bs';
 import OurMissionCard from "components/OurMissionCard";
 import MySlider from "components/MySlider";
 import AppButton from "components/AppButton";
+
+import "assets/styles/WhoUs.css"
 
 
 const WhoUs = ()=>{
@@ -30,7 +31,7 @@ const WhoUs = ()=>{
       ];
 
     return(
-        <Layout>
+        <>
             <div className="who-us-header">
                 <div className="pt-5">
                     <div className="who-us-header-content row justify-content-between align-items-center align-items-center">
@@ -268,7 +269,7 @@ const WhoUs = ()=>{
                     </div>
                 </div>
             </div>
-        </Layout>
+        </>
     )
 }
 
