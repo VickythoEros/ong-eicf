@@ -1,0 +1,163 @@
+
+
+
+.navbar .ong-eicf-logo{
+    height: 7rem;
+    width: 7rem;
+ }
+
+ .navbar  ul.nav-header-ul{
+    list-style: none ;
+    text-transform: uppercase;
+    display: flex;
+    font-weight: bolder;
+}
+
+.navbar ul.nav-header-ul li{
+    margin: 0 5px;
+    font-weight: bolder;
+    font-size: 11px;
+}
+
+.navbar .navbar-divider{
+    display: block;
+    height: 5px;
+    background: var(--bg-gradiant-primary);
+}
+
+.nav-button-container{
+    margin-top: 1rem;
+}
+
+
+.nav-drawer-button-container,
+div.nav-other-button-phone
+{
+    
+    display: none !important;
+}
+
+
+
+.nav-other-button{
+    display: block !important;
+}
+
+
+
+/* adaptation de l'ecran*/
+
+@media only screen and (max-width: 1400px) {
+    .navbar .ong-eicf-logo{
+        height: 7rem;
+        width: 7rem;
+     }
+    
+     .navbar  ul.nav-header-ul{
+        list-style: none ;
+        text-transform: uppercase;
+        display: flex;
+        font-weight: bolder;
+    }
+    
+    .navbar ul.nav-header-ul li{
+        margin: 0 5px;
+        font-weight: bolder;
+        font-size: 11px;
+    }
+
+    .nav-button-container >div button{
+        font-size: 12px ;
+    }
+
+    .nav-button-container{
+        margin-top: 0.5rem;
+    }
+    
+  }
+
+
+@media only screen and (max-width: 992px) {
+    .navbar .ong-eicf-logo{
+        height: 5rem;
+        width: 5rem;
+     }
+    
+     .navbar  ul.nav-header-ul{
+        list-style: none ;
+        text-transform: uppercase;
+        display: flex;
+        font-weight: bolder;
+    }
+    
+    .navbar ul.nav-header-ul li{
+        font-size: 8px ;
+    }
+
+    .nav-button-container >div button{
+        font-size: 8px ;
+    }
+
+    .nav-button-container{
+        margin-top: 0rem;
+    }
+  }
+
+
+
+@media only screen and (max-width: 768px) {
+    .app-nav{
+        box-shadow: 0 .5rem 1rem rgba(228, 227, 227, 0.582);
+        top: 0;
+        background: #fff;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navbar .ong-eicf-logo{
+        height: 5rem;
+        width: 5rem;
+     }
+
+
+    .navbar .navbar-divider ,
+    .navbar  ul.nav-header-ul,
+    .navbar .nav-header-row ,
+    .nav-button-container div.nav-button-menu,
+    div.nav-other-button
+    {
+        display: none !important;
+    }
+    
+    
+    .navbar ul.nav-header-ul li{
+        font-size: 8px ;
+    }
+
+    div.nav-other-button-phone{
+        display: flex;
+        justify-content: center !important;
+    }
+
+    div.nav-other-button-phone  > button{
+        font-size: 16px;
+        padding: 5px 10px;
+        width: 100%;
+    }
+
+
+    .nav-button-container{
+        margin-top: 0rem;
+    }
+
+    .nav-drawer-button-container,
+    div.nav-other-button-phone
+    {
+        display: block !important;
+    }
+   
+    
+    
+  }

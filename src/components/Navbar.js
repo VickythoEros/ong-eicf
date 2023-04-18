@@ -1,42 +1,55 @@
-
+import React from 'react';
 import {
     Menu,
     MenuButton,
     MenuList,
     MenuItem,
-    Button
+    Button,
+    Drawer,
+    DrawerBody,
+    DrawerFooter,
+    IconButton,
+    DrawerHeader,
+    DrawerOverlay,
+    DrawerContent,
+    DrawerCloseButton,
+    useDisclosure,
   } from '@chakra-ui/react'
+  import { HamburgerIcon } from '@chakra-ui/icons'
 import { ChevronDownIcon } from '@chakra-ui/icons'
 import { Link, NavLink } from 'react-router-dom';
+import { Image } from '@chakra-ui/react'
 import AppButton from './AppButton';
 import logo from "assets/images/logo_ong_eicf.png"
 
-import styles from 'assets/styles/Navbar.module.css';
+import 'assets/styles/Navbar.css';
 
 export default function Navbar(){
+    const { isOpen, onOpen, onClose } = useDisclosure()
 
     return(
-        <nav className="container" >
-            <div className="navbar row">
-                <div className="col-md-3">
-                    <div className="rounded">
-                        <NavLink className="nav-logo-container" to="/" >
-                            <img src={logo} alt="ONG EICF" className="nav-logo img-fluid" />
-                        </NavLink>      
-                    </div>
+        <nav className="container app-nav" >
+            <div className="navbar row-md">
+                <div className="col-md-2 nav-logo">
+                        <NavLink className="nav-logo-container " to="/" >
+                            <Image  
+                                src={logo} 
+                                className="ong-eicf-logo" 
+                                alt='logo ONG EICF' />
+                        </NavLink>    
                 </div>
-                <div className="col-md-9">
-                    <div className="row">
-                        <ul className={styles.ul} >
-                            <li className={styles.li} >friday</li>
-                            <li className={styles.li}>monday</li>
-                            <li className={styles.li}>monday</li>
-                            <li className={styles.li}>monday</li>
+                <div className="col-md-10 d-none d-md-block">
+                    <div className="row nav-header-row">
+                        <ul className="nav-header-ul" >
+                            <li >friday</li>
+                            <li >monday</li>
+                            <li >monday</li>
+                            <li >monday</li>
                         </ul>
                     </div>
-                    <div className={styles.navbar_divider}></div>
-                    <div className="d-flex justify-content-between align-items-center pt-3">
-                        <div className="d-flex ">
+                    <div className="navbar-divider"></div>
+                    <div className="d-flex justify-content-between align-items-center nav-button-container">
+                        <div className="d-flex nav-button-menu">
                             <Menu>
                                 <MenuButton  as={Button} variant='ghost' rightIcon={<ChevronDownIcon />}>
                                     QUI SOMMES NOUS 
@@ -52,7 +65,7 @@ export default function Navbar(){
                                 </MenuList>
                             </Menu>
                             <Menu>
-                                <MenuButton as={Button} variant='ghost'  rightIcon={<ChevronDownIcon />}>
+                                <MenuButton as={Button} variant='ghost' rightIcon={<ChevronDownIcon />}>
                                     NOS ACTIONS
                                 </MenuButton>
                                 <MenuList>
@@ -76,14 +89,54 @@ export default function Navbar(){
                                 </MenuList>
                             </Menu>
                         </div>
-                        <div className="d-flex justify-content-between align-items-center gap-2">
+                        <div className="d-flex justify-content-between align-items-center gap-2 nav-other-button">
                             <AppButton title="NOUS CONTACTER" />
                             <AppButton title="JE FAIS UN DON" />
                         </div>
                     </div>
+                     
                 </div>
+                <div className="d-flex justify-content-between align-items-center gap-2  nav-other-button-phone">   
+                            <AppButton title="JE FAIS UN DON" />
+                </div>
+
+                <div className="nav-drawer-button-container">
+                        <IconButton  onClick={onOpen}aria-label='open drawer' icon={<HamburgerIcon />} />
+                    </div> 
             </div>
-           
+           <DrawerPhone 
+           isOpenDrawer={isOpen}
+           onCloseDrawer={onClose}
+           />
         </nav>
     )
 }
+
+
+
+function DrawerPhone({ isOpenDrawer, onCloseDrawer }) {
+
+  
+    return (
+      <>
+        <Drawer 
+            placement={'left'} 
+            onClose={onCloseDrawer} 
+            isOpen={isOpenDrawer}>
+          <DrawerOverlay />
+          <DrawerContent>
+            <DrawerHeader borderBottomWidth='1px'>
+                Basic Drawer
+
+            <DrawerCloseButton  />
+            </DrawerHeader>
+            <DrawerBody>
+              <p>Some contents...</p>
+              <p>Some contents...</p>
+              <p>Some contents...</p>
+            </DrawerBody>
+          </DrawerContent>
+        </Drawer>
+      </>
+    )
+  }

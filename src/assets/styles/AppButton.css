@@ -20,7 +20,6 @@ button.app-button:hover {
 
 button.donate-button{
     border-radius: 100rem;
-    padding: 1rem;
     font-weight: bold;
     font-size: 1rem;
     padding: 0.5rem 1.5rem;
@@ -30,4 +29,14 @@ button.donate-button{
 button.donate-button:hover{
     background-color: var(--color-primary-yellow-3);
 
+}
+
+
+
+@media only screen and (max-width: 992px) {
+  
+  button.donate-button ,button.app-button{
+    font-size: 10px;
+    padding: 0.1rem 0.5rem;
+  }
 }
