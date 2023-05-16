@@ -17,8 +17,11 @@
 
 
 .footer .links .who-us ul{
+    margin: 0;
+    padding: 0;
     display: block;
     text-align: center;
+    list-style: none;
 }
 
 

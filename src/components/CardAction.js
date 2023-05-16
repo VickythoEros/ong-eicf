@@ -1,10 +1,11 @@
 
 import { Link } from "react-router-dom";
 import cardImg from "assets/images/card_img.jpeg"
-import "assets/styles/CardAction.css"
 import { useNavigate } from "react-router-dom";
+import "assets/styles/CardAction.css"
+import { Button } from "@chakra-ui/react";
 
-const CardAction =  ({text,title,link})=>{
+const CardAction =  ({text,title,link,img})=>{
     const navigate = useNavigate();
 
 
@@ -13,23 +14,36 @@ const CardAction =  ({text,title,link})=>{
     }
 
     return(
+        <>
         <div 
-            className="card-action mt-4 mt-md-0 mx-md-3"
-            onClick={showActionDetails}
-        >
-            <div className="card-action-image-container">
-                <img src={cardImg} alt="ONG EICF" className="img-fluid mx-auto w-100 rounded-4" />
-            </div>
-            <div className="card-action-body pt-3">
-                <div className="card-action-head d-flex gap-3 align-items-center ">
-                    <h4> {title} </h4>
-                    <p>Lorem Ipsum </p>
+            className="card-action shadow mt-4 mx-md-3 rounded-4"
+            onClick={showActionDetails}>
+            <div>
+                <div className="card-action-image-container">
+                    <img src={img} alt="ONG EICF" className="img-fluid mx-auto w-100 rounded-top" />
                 </div>
-                <p className="fw-bolder pt-2" > {text} </p>
+                <div className="card-action-body px-3 text-center pt-3">
 
-                <Link className="card-link" to={!!link?link:"/actions-details"}> Comprendre </Link>
+                    <h6> {title} </h6>
+                    <h4 className="fw-bolder pt-2" > {title} </h4>
+                    
+                    <p className="pt-4 " > {text} </p>
+                   
+                    {/*<Link className="card-link" to={!!link?link:"/actions-details"}> Comprendre </Link>*/}
+                   
+                </div>
+                <div className="btn-container w-100 px-3">
+                        <Button 
+                            style={{color:'var(--color-primary-yellow)'}}
+                            colorScheme='var(--color-primary-yellow)' 
+                            className="rounded-pill w-100 py-4 "
+                            variant='outline'>
+                            Comprendre
+                        </Button>
+                    </div>
             </div>
         </div>
+        </>
     )
 }
 

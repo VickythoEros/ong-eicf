@@ -19,10 +19,13 @@ import {
 import { ChevronDownIcon } from '@chakra-ui/icons'
 import { Link, NavLink } from 'react-router-dom';
 import { Image } from '@chakra-ui/react'
-import AppButton from './AppButton';
+import { BsFillDatabaseFill } from "react-icons/bs";
+import AppButton, { AppButtonRapport } from './AppButton';
+
 import logo from "assets/images/logo_ong_eicf.png"
 
 import 'assets/styles/Navbar.css';
+import { listsOptionsWhous } from 'views/WhoUs';
 
 export default function Navbar(){
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -39,13 +42,14 @@ export default function Navbar(){
                         </NavLink>    
                 </div>
                 <div className="col-md-10 d-none d-md-block">
-                    <div className="row nav-header-row">
+                    <div className="d-flex justify-content-between  align-items-center py-2 nav-header-row">
                         <ul className="nav-header-ul" >
-                            <li >friday</li>
-                            <li >monday</li>
-                            <li >monday</li>
-                            <li >monday</li>
+                            <li >Appel offre</li>
+                            <li >emplois</li>
                         </ul>
+                        <div className=''>
+                            <AppButtonRapport icon={<BsFillDatabaseFill />} title="RAPPORTS MENSUELS" />
+                        </div>
                     </div>
                     <div className="navbar-divider"></div>
                     <div className="d-flex justify-content-between align-items-center nav-button-container">
@@ -55,39 +59,24 @@ export default function Navbar(){
                                     QUI SOMMES NOUS 
                                 </MenuButton>
                                 <MenuList>
-                                    <MenuItem 
-                                        as={NavLink} 
-                                        to='/who-us'>
-                                        Qui sommes nous ?
-                                    </MenuItem>
-                                    <MenuItem>nous</MenuItem>
-                                    <MenuItem>nous</MenuItem>
+                                    {
+                                        listsOptionsWhous?.map(({title,id})=>(
+                                            <MenuItem 
+                                                as={NavLink} 
+                                                to={`/who-us#${id}`}>
+                                                {title}
+                                            </MenuItem>
+                                        ))
+                                    }
                                 </MenuList>
                             </Menu>
-                            <Menu>
-                                <MenuButton as={Button} variant='ghost' rightIcon={<ChevronDownIcon />}>
-                                    NOS ACTIONS
-                                </MenuButton>
-                                <MenuList>
-                                    <MenuItem as={Link} to='/actions'>
-                                        Actions
-                                    </MenuItem>
-                                    <MenuItem>Action 2</MenuItem>
-                                    <MenuItem>Action 2</MenuItem>
-                                </MenuList>
-                            </Menu>
-                            <Menu>
-                                <MenuButton as={Button}variant='ghost'  rightIcon={<ChevronDownIcon />}>
-                                    NOS PROJETS
-                                </MenuButton>
-                                <MenuList>
-                                    <MenuItem as={Link} to='/projects'>
-                                        Projets
-                                    </MenuItem>
-                                    <MenuItem>Projets</MenuItem>
-                                    <MenuItem>Projets</MenuItem>
-                                </MenuList>
-                            </Menu>
+                            <Button className='text-uppercase' as={Link}variant='ghost'  to='/actions' >
+                            Actions
+                            </Button>
+                            <Button className='text-uppercase' as={Link}variant='ghost'  to='/projects' >
+                               
+                                    Projets
+                            </Button>
                         </div>
                         <div className="d-flex justify-content-between align-items-center gap-2 nav-other-button">
                             <AppButton title="NOUS CONTACTER" />

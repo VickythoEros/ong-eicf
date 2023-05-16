@@ -40,3 +40,24 @@ button.donate-button:hover{
     padding: 0.1rem 0.5rem;
   }
 }
+
+
+button.app-button-rapport {
+  border-radius: 100rem;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  color: #000;
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 3px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, var(--color-primary-yellow), var(--color-primary-green));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fff inherit;
+}
+
+button.app-button-rapport:hover {
+  
+  box-shadow: 2px 1000px 1px #fff inset;
+}
+

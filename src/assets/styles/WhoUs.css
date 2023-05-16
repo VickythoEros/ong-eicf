@@ -100,3 +100,8 @@
     -o-border-radius: 1rem;
 }
 /* End our-worth*/
+
+.who-us-items:hover{
+    color: var(--color-primary-yellow-3) !important;
+    cursor: pointer;
+}

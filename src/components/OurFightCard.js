@@ -1,22 +1,37 @@
 
-import { Link } from "react-router-dom";
 import "assets/styles/CardAction.css"
+import { Button } from "@chakra-ui/react";
 
 
 const OurFightCard =  ({title,imageSrc})=>{
 
     return(
         <div 
-            className="our-fights-card mt-4 mt-md-2 shadow-4"
-            style={{
-                backgroundImage:`linear-gradient(to bottom, rgba(200, 200, 200, 0), rgba(200, 200, 200,0), rgba(0, 0, 0, 0.99)),url(${imageSrc})`
-            }}
-         >
-            <div className="our-fight-card-body">
-                <h3 className="mb-5" >
-                    {title}
-                </h3>
-                <Link className="card-link" to={"#"}> Decouvrir le combat </Link>
+            className="card-action mx-3 shadow rounded" 
+            style={{ height:"30rem",  }}>
+
+            <img src={imageSrc} alt="fight" className="w-100 h-100 img-fluid rounded" />
+            <div
+                style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+                background: 'linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7))',
+                }}
+            ></div>
+            <div className="px-3" style={{ position: 'absolute', top: "50%" }}>
+                <p className="text-white fs-4 fw-bolder" > {title} </p>
+            </div>
+            <div className="btn-container w-100 px-3">
+                <Button 
+                    style={{color:'var(--color-primary-yellow)'}}
+                    colorScheme='var(--color-primary-yellow)' 
+                    className="rounded-pill w-100 py-4 "
+                    variant='outline'>
+                    Comprendre
+                </Button>
             </div>
         </div>
     )
