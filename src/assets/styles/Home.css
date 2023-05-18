@@ -1,7 +1,6 @@
 
 .header-card-main{
-    
-    position: relative;
+  
     background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(255, 255, 255)), linear-gradient(10deg, var(--color-primary-yellow), var(--color-primary-yellow));
 }
 /*

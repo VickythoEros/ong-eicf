@@ -6,18 +6,18 @@ import AppButton from './AppButton';
 
 function SlideHeader({slides}) {
   return (
-    <Carousel>
+    <Carousel >
       {
-        slides?.map(({title,content,image,showButton})=>{
+        slides?.map(({title,content,image,showButton},index)=>{
           return (
-            <Carousel.Item className='slider-header' >
+            <Carousel.Item key={index} className='slider-header' >
               <img
                 className="d-block w-10 img-fluid"
                 src={image}
                 alt={title}
               />
               <Carousel.Caption 
-                className="  text-start slide-caption-container" 
+                className="row text-start slide-caption-container" 
               >
                 <div className='col-md-7 pb-md-5'>
                   <h3 className='fw-bolder' > {title} </h3>

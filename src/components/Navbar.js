@@ -31,7 +31,7 @@ export default function Navbar(){
     const { isOpen, onOpen, onClose } = useDisclosure()
 
     return(
-        <nav className=" app-nav shadow py-2  bg-white " >
+        <nav className=" app-nav shadow py-2  bg-white ">
             <div className="navbar row-md container">
                 <div className="col-md-2 nav-logo">
                         <NavLink className="nav-logo-container " to="/" >
@@ -62,6 +62,7 @@ export default function Navbar(){
                                     {
                                         listsOptionsWhous?.map(({title,id})=>(
                                             <MenuItem 
+                                                key={id}
                                                 as={NavLink} 
                                                 to={`/who-us#${id}`}>
                                                 {title}
