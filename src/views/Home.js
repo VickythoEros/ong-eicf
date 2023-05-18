@@ -12,36 +12,58 @@ import 'assets/styles/Home.css';
 
 
 
+const slides = [
+    { 
+        firstContent: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte", 
+        secondContent: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.", 
+        image: 'https://placeimg.com/640/480/tech'
+    },
+    { 
+        firstContent: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte", 
+        secondContent: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.", 
+        image: 'https://placeimg.com/640/480/people' 
+    },
+    { 
+        firstContent: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texteimprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.", 
+        secondContent: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.", 
+        image: 'https://placeimg.com/640/480/animals' 
+    },
+  ];
+
+
+
+const actions = [
+    { 
+        title:"lorem ipsum ",
+        img:`https://cdn.pixabay.com/photo/2023/04/15/14/42/baby-7927866_1280.jpg`,
+        text:" Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla"
+     },
+     { 
+         title:"lorem ipsum ",
+         img:`https://cdn.pixabay.com/photo/2017/06/18/18/39/baby-2416718_1280.jpg`,
+         text:" Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla"
+      },
+      { 
+          title:"lorem ipsum ",
+          img:`https://images.pexels.com/photos/3225487/pexels-photo-3225487.jpeg`,
+          text:" Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla"
+       },
+]
 
 
 
 const Home = ()=> {
 
-    const slides = [
-        { 
-            firstContent: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte", 
-            secondContent: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.", 
-            image: 'https://placeimg.com/640/480/tech'
-        },
-        { 
-            firstContent: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte", 
-            secondContent: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.", 
-            image: 'https://placeimg.com/640/480/people' 
-        },
-        { 
-            firstContent: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texteimprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.", 
-            secondContent: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.", 
-            image: 'https://placeimg.com/640/480/animals' 
-        },
-      ];
   return (
     <>
-        <div className='container'>
+        <div className='' style={{
+           
+        }} >
             <AppHeader
                 title="Ensemble luttons contre les inégalités"
                 content="Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que "
             />
-        <div className="row justify-content-end header-card-main ">
+        {/*<div className="row justify-content-end header-card-main ">
             <div className="col-md-5  hearder-card">
                 <h2> Depuis 16 ans notre action compte</h2>
                 <div className="row">
@@ -55,34 +77,26 @@ const Home = ()=> {
                     </div>
                 </div>
             </div>
-        </div>
-      </div>
-{/*
-      <div className='container'>
-        <div className='row'>
-        <div class="col-lg-4"><div class="sigma_portfolio-item"><img src="	https://slidesigma.nyc/templatemonster/react/martalaa/assets/img/ministries/16.jpg" alt="Music Ministry"/><div class="sigma_portfolio-item-content"><div class="sigma_portfolio-item-content-inner"><h5> <a href="/templatemonster/react/martalaa/ministry-details/1">Music Ministry</a> </h5><p class="blockquote bg-transparent">Lorem Ipsum is simply dummy text of the printing and typesetting indus</p></div><a href="/templatemonster/react/martalaa/ministry-details/1"><i class="fal fa-plus"></i></a></div></div></div>
-        </div>
   </div>*/}
+      </div>
+
 
       <div className="home-card-actions">
       <div className="card-sections container">
         <div className="d-flex flex-wrap jusitfy-content-between align-items-center ">
-             <CardAction 
-                    title="lorem ipsum "
-                    img={`https://cdn.pixabay.com/photo/2023/04/15/14/42/baby-7927866_1280.jpg`}
-                    text=" Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla"
-                 />
 
-             <CardAction 
-                    title="lorem ipsum "
-                    img={`https://cdn.pixabay.com/photo/2017/06/18/18/39/baby-2416718_1280.jpg`}
-                    text=" Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla"
-                 />
-             <CardAction 
-                    title="lorem ipsum "
-                    img={`https://cdn.pixabay.com/photo/2014/09/16/01/19/girl-447701_1280.jpg`}
-                    text=" Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla"
-                 />
+            {
+                actions?.map(({title,img,text},index)=>(
+                    <CardAction 
+                            key={index}
+                           title={title}
+                           img={img}
+                           text={text}
+                        />))
+            }
+
+
+
         </div>
         <div className="row jusitfy-content-evenly align-items-center text-center mt-3 mt-md-5">
             <div className="col-md-8 ">

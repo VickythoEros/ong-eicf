@@ -15,6 +15,7 @@ import "slick-carousel/slick/slick-theme.css";
 import 'assets/styles/App.css';
 
 
+
 function App() {
 
   //Configurations des routes de l'application

@@ -31,8 +31,8 @@ export default function Navbar(){
     const { isOpen, onOpen, onClose } = useDisclosure()
 
     return(
-        <nav className="container app-nav" >
-            <div className="navbar row-md">
+        <nav className=" app-nav shadow py-2  bg-white " >
+            <div className="navbar row-md container">
                 <div className="col-md-2 nav-logo">
                         <NavLink className="nav-logo-container " to="/" >
                             <Image  
