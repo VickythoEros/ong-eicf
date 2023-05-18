@@ -56,28 +56,26 @@ const Home = ()=> {
 
   return (
     <>
-        <div className='' style={{
-           
-        }} >
+        <div className=''>
             <AppHeader
                 title="Ensemble luttons contre les inégalités"
                 content="Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que "
             />
-        {/*<div className="row justify-content-end header-card-main ">
-            <div className="col-md-5  hearder-card">
-                <h2> Depuis 16 ans notre action compte</h2>
-                <div className="row">
-                    <div className="col-md-6">
+        <div className="row justify-content-center header-card-main mb-5 py-5 ">
+            <div className="col-md-9 container text-center hearder-card">
+                <h2 className="fw-bolder text-uppercase " > Depuis 16 ans notre action compte</h2>
+                <div className="row shadow rounded bg-white justify-content-between">
+                    <div className="col-md-6 shadow bg-wite py-md-5 my-md-0 my-3">
                         <p> 100 millions </p>
                         <p> personnes aidées en 2022  </p>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-6 shadow  py-md-5  my-md-0 my-3">
                         <p>100  </p>    
                         <p> pays d'interventions </p>
                     </div>
                 </div>
             </div>
-  </div>*/}
+        </div>
       </div>
 
 
@@ -99,10 +97,10 @@ const Home = ()=> {
 
         </div>
         <div className="row jusitfy-content-evenly align-items-center text-center mt-3 mt-md-5">
-            <div className="col-md-8 ">
+            <div className="col-md-6 ">
                 <AppButton title="Toutes les actualiés" />
             </div>
-            <div className="col-md-4">
+            <div className="col-md-6">
                 <AppButton title="Actu des réseaux" />
             </div>
 

@@ -13,7 +13,6 @@ function SlideHeader({slides}) {
             <Carousel.Item className='slider-header' >
               <img
                 className="d-block w-10 img-fluid"
-                style={{width: '100%', height: '500px'}}
                 src={image}
                 alt={title}
               />

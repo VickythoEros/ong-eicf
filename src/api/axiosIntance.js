@@ -7,3 +7,4 @@ const axiosIntance = axios.create({
 })
 
 export default axiosIntance
+        

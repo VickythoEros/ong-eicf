@@ -2,22 +2,6 @@ import "assets/styles/AppHeader.css"
 import SlideHeader from "./SlideHeader"
 
 
-{
-    /**
-     * 
-        <div className="header">
-            <div className="row">
-                <div className="col-md-7">
-                    <h1>{title}</h1>
-                    <p> {content} </p>
-                    { showButton && <AppButton title="Nous connaitre" />}
-                </div>
-            </div>
-        </div>
-    */
-}
-
-
 
 const slides = [
     { 
