@@ -1,16 +1,23 @@
 
+
 .actions-list-container{
     margin-top: 7rem;
     margin-bottom: 8rem;
 }
 
-.actions-list-container h1{
+.actions-list-container h1,.activity-header-title h1{
     font-weight: bolder;
-    margin-bottom: 1rem;
+    margin-bottom: 1.875rem;
+    font-family: Fira Sans Condensed,sans-serif;
 }
 
+.actions-list-container p,.activity-header-title p{
 
-.actions-list-container>div{
+  font-family: Merriweather,serif;
+  font-style: italic;
+}
+
+.actions-list-container .actions-lists{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 3rem;

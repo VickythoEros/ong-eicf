@@ -1,42 +1,58 @@
 
 .activity-header{
 
-    background-image:
-    linear-gradient(to bottom, rgba(146, 139, 139, 0.452), rgba(0, 0, 0, 0.849), rgb(0, 0, 0)),
-    url(assets/images/logo_ong_eicf.png);
-    padding: 4rem;
-    margin-top: 5rem;
-    color: #fff;
-    border-radius: 2rem ;
-    -webkit-border-radius: 2rem ;
-    -moz-border-radius: 2rem ;
-    -ms-border-radius: 2rem ;
-    -o-border-radius: 2rem ;
 }
 
-.actiivty-items-container{
-    display: flex;
-    column-gap: 20px;
-    flex-direction: row;
-}
+
 
 .activity-items{
-    text-align: center;
+    transition:all 0.5s ease-in-out;
+    position: relative;
+    width: 30%;
+    transition: transform 0.3s ease;
+}
+
+.activity-number-unit{
+    border: 1px solid  var(--color-primary-yellow);
+}
+
+.activity-items p{
     font-weight: bolder;
 }
 
 .activity-number{
     font-weight: bold;
+    font-size: 3rem;
     color: var(--color-primary-yellow-3);
 }
 
 .activity-unit{
-    font-size: 12px;
+    font-size: 1.5rem;
     font-weight: bold;
-    color: #fff;
+    color: #000000;
+    font-family: Fira Sans Condensed,sans-serif;
 }
 
-.ctivity-items p{
+
+.activity-text-container{
+    height: 20rem;
+    position: relative;
+}
+
+
+.activity-text-container{
+    height: 10rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-primary-yellow);
+}
+
+.activity-text{
+    font-size: 1.875rem;
+    color: #fff;
     font-weight: bolder;
-    font-size: 30px;
+    font-family: Fira Sans Condensed,sans-serif;
+    
 }

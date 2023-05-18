@@ -33,3 +33,15 @@ code {
 }
 
 
+
+.element-title-header{
+  font-weight: bolder;
+  margin-bottom: 1.875rem;
+  font-family: Fira Sans Condensed,sans-serif;
+}
+
+.element-title-paragraph{
+
+font-family: Merriweather,serif;
+font-style: italic;
+}

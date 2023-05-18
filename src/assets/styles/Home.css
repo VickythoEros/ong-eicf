@@ -21,6 +21,7 @@
 
 .hearder-card h2{
     color: #ffffff;
+    font-family: Fira Sans Condensed,sans-serif;
 }
 
 
@@ -28,13 +29,26 @@
   color: var(--color-primary-yellow);
   font-size: 30px;
   font-weight: bolder;
+  font-family: Fira Sans Condensed,sans-serif;
   
 }
 
 .hearder-card .row p:last-child{
     font-weight: bolder;
-    
+    font-family: Fira Sans Condensed,sans-serif;
 }
+
+
+.home-card-actions-h h1{
+  font-family: Fira Sans Condensed,sans-serif;
+} 
+
+
+.home-card-actions-h p{
+  font-family: Merriweather,serif;
+  font-style: italic;
+
+} 
 
   
 /* Our fights section */
@@ -42,14 +56,30 @@
     margin-top: 5rem;
 }
 
-.our-fights-section h1{
-    font-size: 45px;
-    display: block;
-    color: #000000;
-    font-weight: bolder;
-    text-transform: uppercase;
-    line-height: 1.4;
+
+.join-us-actions input,.join-us-actions input:focus  {
+
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 3px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, var(--color-primary-yellow), var(--color-primary-green));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fff inset;
 }
+
+
+
+.our-fights-section .header-fight h1{
+  font-family: Fira Sans Condensed,sans-serif;
+}
+
+
+
+.our-fights-section .header-fight p{
+  font-family: Merriweather,serif;
+  font-style: italic;
+}
+
 
 .our-fights-card{
     position: relative;
@@ -87,33 +117,16 @@
 /* end Our fights section */
 
 
+
 /* Join us section */
 
+
+
 .join-us-section{
-    margin-top: 6rem;
-
-}
-
-.join-us-section .join-us-content {
-    bottom: 0rem;
-    height: 38rem;
-    background-image:
-    linear-gradient(to bottom, rgba(146, 139, 139, 0.452), rgba(0, 0, 0, 0.904)),
-    url(assets/images/logo_ong_eicf.png);
-    padding: 4rem;
     margin-top: 3rem;
-    color: #fff;
-    border-radius: 2rem ;
-    -webkit-border-radius: 2rem ;
-    -moz-border-radius: 2rem ;
-    -ms-border-radius: 2rem ;
-    -o-border-radius: 2rem ;
+
 }
 
-.join-us-section .join-us-content h2{
-    font-size: 55px;
-    margin-top: 6rem;
-}
 
 .join-us-actions {
     margin-top: 3rem;
@@ -122,6 +135,9 @@
 .join-us-actions div h3 {
     font-weight: bolder;
     margin-bottom: 1.5rem;
+    font-family: Fira Sans Condensed,sans-serif;
+    text-transform: uppercase;
+
 }
 
 
@@ -160,3 +176,24 @@
     -o-transition:all 0.5s ease-in-out;
 }
 /* End Join us section */
+
+
+/* victoire container */
+
+
+.victoire-container-header  h1{
+  font-family: Fira Sans Condensed,sans-serif;
+}
+
+
+
+.victoire-container-header p{
+  font-family: Merriweather,serif;
+  font-style: italic;
+}
+
+.my-slide-container{
+  
+}
+
+/* victoire container */

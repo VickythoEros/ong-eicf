@@ -56,8 +56,18 @@ button.app-button-rapport {
   box-shadow: 2px 1000px 1px #fff inherit;
 }
 
-button.app-button-rapport:hover {
+
+button.app-button-rapport {
+  color: #fff;
   
+
+}
+
+
+
+button.app-button-rapport:hover {
+  color: #000000;
   box-shadow: 2px 1000px 1px #fff inset;
+
 }
 

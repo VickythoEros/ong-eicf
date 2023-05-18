@@ -8,6 +8,33 @@ import MySlider from "components/MySlider";
 import AppButton from "components/AppButton";
 
 import "assets/styles/WhoUs.css"
+import AppHeader from 'components/AppHeader';
+
+
+
+const slidesHeader2 = [
+    { 
+        title:"Agir avec EICF Rejoignez une communauté engagée de 100 000 personnes en Côte D'ivoire",  
+        content: "Nous t'invitons chaleureusement à rejoindre notre communauté d'ONG dédiée à faire une réelle différence dans le monde. En tant que membre de notre communauté,Nous sommes convaincus que ton expertise, tes compétences et ta passion apporteront une contribution précieuse à nos efforts communs pour lutter contre la pauvreté, les inégalités et les injustices. ", 
+        image: 'https://cdn.pixabay.com/photo/2017/06/18/18/39/baby-2416718_1280.jpg',
+        showButton:true,
+        commentor:"Suini Fatou"
+    },
+    { 
+        title: "Agir avec EICF Rejoignez une communauté engagée de 100 000 personnes en Côte D'ivoire", 
+        content: "Nous t'invitons avec enthousiasme à rejoindre notre communauté d'ONG qui partage une vision commune de justice sociale et de lutte contre la pauvreté. En devenant membre de notre communauté, tu auras l'occasion de faire partie d'un réseau dynamique de personnes engagées qui travaillent ensemble pour créer un impact positif dans notre société.", 
+        image: 'https://cdn.pixabay.com/photo/2023/04/15/14/42/baby-7927866_1280.jpg' ,
+        showButton:true,
+        commentor:"Suini Fatou"
+    },
+    { 
+        title: "Agir avec EICF Rejoignez une communauté engagée de 100 000 personnes en Côte D'ivoire", 
+        content: "Nous t'invitons cordialement à rejoindre notre communauté d'ONG, un espace où les idées prennent vie et où les actions concrètes transforment des vies. En intégrant notre communauté, tu seras entouré(e) de personnes partageant les mêmes convictions et aspirations, travaillant ensemble pour apporter des changements positifs dans notre société.", 
+        image: 'https://cdn.pixabay.com/photo/2017/06/18/18/39/baby-2416718_1280.jpg' ,
+        showButton:true,
+        commentor:"Suini Fatou"
+    },
+  ];
 
 
 export const listsOptionsWhous = [
@@ -68,7 +95,10 @@ const WhoUs = ()=>{
 
     return(
         <>
-            <div className="who-us-header">
+            <div className="who-us-header container"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="top-bottom">
                 <div className="pt-5">
                     <div className="who-us-header-content row justify-content-between align-items-center align-items-center">
                         <div className="col-md-3 my-3 shadow py-md-5 ">
@@ -128,8 +158,11 @@ const WhoUs = ()=>{
             </div>
             <div 
                 ref={(el) => (componentRefs.current[1] = el)} 
-                className="who-us-content mt-5">
-                <h1 className="fw-bolder text-center" >
+                className="who-us-content mt-5 container"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="top-bottom">
+                <h1 className="fw-bolder text-center element-title-header" >
                     Qui sommes nous ?
                 </h1>
                 <div className="row justify-content-between align-items-center py-4">
@@ -163,7 +196,7 @@ const WhoUs = ()=>{
                 <div className="other-mission-indicator ">
                     <div className="row justify-content-center align-items-center">
                         <div className="col">
-                            <p>
+                            <p className='element-title-paragraph' >
                                 Le Lorem Ipsum est simplement du faux texte employé dans .<span className="span-colored">composition et la mise en page avant impression.</span> Le Lorem 
                             </p>
                         </div>
@@ -173,17 +206,22 @@ const WhoUs = ()=>{
             
             <div 
                 ref={(el) => (componentRefs.current[2] = el)} 
-                className="mt-5 pt-5 pb-5 mb-5">
-                <div className="row justify-content-center align-items-center text-center">
+                className="mt-5 pt-5 pb-5 mb-5 "
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="top-bottom">
+                    <div className='container'>
+                <div className="row justify-content-center align-items-center text-center ">
                     <div className="col-md-9">
-                        <h1 className="fw-bolder">
+                        <h1 className="fw-bolder element-title-header">
                             Mission de l'ONG EICF
                         </h1>
-                        <p className="my-4">
+                        <p className="my-4 element-title-paragraph">
                         Le Lorem Ipsum est simplement du faux texte employé dans la composition et laLe Lorem Ipsum est simplement du faux texte employé dans <span className="span-colored">composition et la mise en page avant impression.</span> laLe Lorem Ipsum est simplement du faux texte employé dans la composition et la 
                         </p>
                     </div>
                 </div>
+                    </div>
                 <div className="row">
                     <MySlider slides={slides} />
                 </div>
@@ -191,8 +229,8 @@ const WhoUs = ()=>{
 
             <div 
                 ref={(el) => (componentRefs.current[3] = el)} 
-                className="specific-objectif">
-                <h1 className="fw-bolder text-center pt-5 pt-4">
+                className="specific-objectif container">
+                <h1 className="fw-bolder text-center pt-5 pt-4 element-title-header">
                     Objectifs specifiques
                 </h1>
                 <div className="row justify-content-between align-items-center py-5">
@@ -214,9 +252,12 @@ const WhoUs = ()=>{
                 </div>
                 <div 
                     ref={(el) => (componentRefs.current[4] = el)} 
-                    className="row justify-content-between align-items-center">
+                    className="row justify-content-between align-items-center"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-anchor-placement="top-bottom">
                     <div className="col-md-6 my-3 ">
-                        <h2 className="fw-bolder text-center">
+                        <h2 className="fw-bolder text-center element-title-header" >
                             Objectifs assignés
                         </h2>
                         <p>
@@ -232,36 +273,29 @@ const WhoUs = ()=>{
                     </div>
                 </div>
 
-                <div className="specific-objectif-header">
-                    <div className="row justify-content-center align-items-center mx-auto">
-                        <div className="col-md-10">
-                            <h1>
-                                Le Lorem Ipsum est simplement du faux texte 
-                            </h1>
-                            <div className="specific-objectif-header-text">
-                                <p> 
-                                    Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur   anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que 
-                                </p>
-                                <p> 
-                                    Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que 
-                                </p> 
-                                <p> 
-                                    Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que 
-                                </p>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
+            <div className="mt-md-5"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="top-bottom">
+                <AppHeader 
+                    slidesheader={slidesHeader2} 
+                    showButton={false}
+                    action={true}
+                    />
+            </div>                
+        
             <div 
                 ref={(el) => (componentRefs.current[5] = el)}  
-                className="our-worth">
+                className="our-worth container"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-anchor-placement="top-bottom">
                 <div className="">
-                    <h1 className="fw-bolder text-center pt-5 pt-4">
+                    <h1 className="fw-bolder text-center pt-5 pt-4 element-title-header">
                         Valeurs de l'ONG EICF
                     </h1>
-                    <p>
+                    <p className='element-title-paragraph' >
                         Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que 
                         Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de <span className="span-colored">composition et la mise en page avant impression.</span> quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que 
                     </p>
@@ -271,7 +305,7 @@ const WhoUs = ()=>{
                     <div className="container">
                         <div className="d-flex justify-content-center align-items-stretch">
                             <div className="our-worth-mission-indicator-style"></div>
-                            <p className="our-worth-mission-indicator-text" >
+                            <p className="our-worth-mission-indicator-text element-title-paragraph" >
                                 Le Lorem Ipsum est simplement du faux texte employé dans .<span className="span-colored">composition et la mise en page avant impression.</span> Le Lorem 
                                 Le Lorem Ipsum est simplement du faux texte employé dans Le Lorem 
                                 Le Lorem Ipsum est simplement du faux texte employé dans Le Lorem 

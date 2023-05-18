@@ -4,11 +4,11 @@ import "assets/styles/SlideHeader.css"
 import Carousel from 'react-bootstrap/Carousel';
 import AppButton from './AppButton';
 
-function SlideHeader({slides}) {
+function SlideHeader({slides,showButton,action=false}) {
   return (
-    <Carousel >
+    <Carousel  >
       {
-        slides?.map(({title,content,image,showButton},index)=>{
+        slides?.map(({title,content,image,commentor},index)=>{
           return (
             <Carousel.Item key={index} className='slider-header' >
               <img
@@ -24,6 +24,24 @@ function SlideHeader({slides}) {
                   <p className='py-3'>{content}</p>
 
                   { showButton && <AppButton title="Nous connaitre" />}
+
+                  { (!showButton && !action) && <div className=''>
+                    <p style={{
+                      height:"4px",
+                      borderRadius:"5px",
+                      position:'relative',
+                      content:"",
+                      width:"10rem",
+                      dispaly:"block",
+                      backgroundImage: "linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, var(--color-primary-yellow), var(--color-primary-green))",
+                    }} ></p>
+                    <p  >{commentor}</p>
+
+                  </div>
+
+                  }
+                  
+
                 </div>
               </Carousel.Caption>
             </Carousel.Item>)
@@ -35,3 +53,6 @@ function SlideHeader({slides}) {
 }
 
 export default SlideHeader;
+
+
+

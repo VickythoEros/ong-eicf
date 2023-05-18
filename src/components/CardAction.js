@@ -1,11 +1,10 @@
 
 import { Link } from "react-router-dom";
-import cardImg from "assets/images/card_img.jpeg"
 import { useNavigate } from "react-router-dom";
 import "assets/styles/CardAction.css"
 import { Button } from "@chakra-ui/react";
 
-const CardAction =  ({text,title,link,img})=>{
+const CardAction =  ({date,ville,contenu,link,img})=>{
     const navigate = useNavigate();
 
 
@@ -17,17 +16,20 @@ const CardAction =  ({text,title,link,img})=>{
         <>
         <div 
             className="card-action shadow mt-4 mx-md-3 rounded-4"
-            onClick={showActionDetails}>
+            onClick={showActionDetails}
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-anchor-placement="top-bottom">
             <div>
                 <div className="card-action-image-container">
                     <img src={img} alt="ONG EICF" className="img-fluid mx-auto w-100 rounded-top" />
                 </div>
                 <div className="card-action-body px-3 text-center pt-3">
 
-                    <h6> {title} </h6>
-                    <h4 className="fw-bolder pt-2" > {title} </h4>
+                    <h6> {date} </h6>
+                    <h4 className="fw-bolder pt-2" > {ville} </h4>
                     
-                    <p className="pt-4 " > {text} </p>
+                    <p className="pt-4 " > {contenu} </p>
                    
                     {/*<Link className="card-link" to={!!link?link:"/actions-details"}> Comprendre </Link>*/}
                    

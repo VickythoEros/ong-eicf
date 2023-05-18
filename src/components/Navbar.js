@@ -48,13 +48,13 @@ export default function Navbar(){
                             <li >emplois</li>
                         </ul>
                         <div className=''>
-                            <AppButtonRapport icon={<BsFillDatabaseFill />} title="RAPPORTS MENSUELS" />
+                            <AppButtonRapport icon={<BsFillDatabaseFill />} title="RAPPORTS ANNUELS" />
                         </div>
                     </div>
                     <div className="navbar-divider"></div>
                     <div className="d-flex justify-content-between align-items-center nav-button-container">
                         <div className="d-flex nav-button-menu">
-                            <Menu>
+                            <Menu  >
                                 <MenuButton  as={Button} variant='ghost' rightIcon={<ChevronDownIcon />}>
                                     QUI SOMMES NOUS 
                                 </MenuButton>
