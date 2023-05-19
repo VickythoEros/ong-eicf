@@ -152,11 +152,12 @@ const Actions = ()=>{
                     </p>
                 </div>  
 
-                <div className="d-flex flex-wrap jusitfy-content-between align-items-center actions-lists">
+                <div 
+            className="d-md-flex flex-wrap jusitfy-content-evenly align-items-center ">
                     {
                     actions?.map(({ville,date,img,contenu},index)=>(
                         <CardAction 
-                                key={index}
+                            key={index}
                             ville={ville}
                             date={date}
                             img={img}

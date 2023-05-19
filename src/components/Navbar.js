@@ -116,14 +116,85 @@ function DrawerPhone({ isOpenDrawer, onCloseDrawer }) {
           <DrawerOverlay />
           <DrawerContent>
             <DrawerHeader borderBottomWidth='1px'>
-                Basic Drawer
+               
+                <NavLink
+                    onClick={onCloseDrawer}
+                     className="nav-logo-container " to="/" >
+                    <Image  
+                        style={{
+                            height:50
+                        }}
+                        src={logo} 
+                        className="ong-eicf-logo" 
+                        alt='logo ONG EICF' />
+                </NavLink>  
 
             <DrawerCloseButton  />
             </DrawerHeader>
             <DrawerBody>
-              <p>Some contents...</p>
-              <p>Some contents...</p>
-              <p>Some contents...</p>
+                <div className='mb-5 fw-bolder border-bottom border-4 pb-3'>
+                    <ul 
+                        className="text-uppercase"
+                        style={{
+                            listStyle:'none',
+                            margin:0,
+                            padding:0,
+                            display:"flex",
+                            justifyContent:"space-between",
+                        }}
+                         >
+                        <li  >Appel offre</li>
+                        <li >emplois</li>
+                    </ul>
+
+                    <div className='pt-5'>
+                        <AppButtonRapport icon={<BsFillDatabaseFill />} title="RAPPORTS ANNUELS" />
+                    </div>
+                </div>
+                
+                        <div className="">
+                            <Menu  >
+                                <MenuButton className='w-100 py-4'  as={Button} variant='solid' rightIcon={<ChevronDownIcon />}>
+                                    QUI SOMMES NOUS 
+                                </MenuButton>
+                                <MenuList>
+                                    {
+                                        listsOptionsWhous?.map(({title,id})=>(
+                                            <MenuItem 
+                                                onClick={onCloseDrawer}
+                                                key={id}
+                                                as={NavLink} 
+                                                to={`/who-us#${id}`}>
+                                                {title}
+                                            </MenuItem>
+                                        ))
+                                    }
+                                </MenuList>
+                            </Menu>
+                            <Button
+                                onClick={onCloseDrawer}
+                                size="lg"
+                                 className='text-uppercase d-block mt-4 py-3 text-center' as={Link} variant="solid"  to='/actions' >
+                            Actions
+                            </Button>
+                            <Button
+                                size="lg"
+                                onClick={onCloseDrawer}
+                                 className='text-uppercase d-block mt-4 py-3  text-center' as={Link} variant="solid"  to='/projects' >
+                            Projets
+                            </Button>
+                        </div>
+              <div className='mt-5'>
+                <AppButton 
+                    title="JE FAIS UN DON"
+                    className='w-100 py-2 my-3'
+                     />
+                <AppButton 
+                    title="NOUS CONTACTER"
+                    className='w-100 py-2 my-3'
+                     />
+              
+              </div>
             </DrawerBody>
           </DrawerContent>
         </Drawer>

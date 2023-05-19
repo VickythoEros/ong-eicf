@@ -172,7 +172,7 @@ const Home = ()=> {
       <div className="card-sections container">
         
         <div 
-            className="d-flex flex-wrap jusitfy-content-between align-items-center " 
+            className="d-md-flex flex-wrap jusitfy-content-evenly align-items-center "
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-anchor-placement="top-bottom" > 
@@ -197,11 +197,16 @@ const Home = ()=> {
             data-aos-duration="1000"
             data-aos-anchor-placement="top-bottom"
         >
-            <div className="col-md-6 ">
-                <AppButton title="Toutes les actualités" />
+            <div className="col-md-6 pt-md-5 mt-3">
+                <AppButton 
+                    title="Toutes les actualités"
+                    className="w-100 py-3"
+                     />
             </div>
-            <div className="col-md-6">
-                <AppButton title="Actu des réseaux" />
+            <div className="col-md-6 pt-md-5 mt-3">
+                <AppButton 
+                    title="Actu des réseaux" 
+                    className="w-100 py-3"/>
             </div>
 
         </div>
@@ -224,7 +229,7 @@ const Home = ()=> {
             </div>
         </div>
         <div 
-            className="d-flex flex-wrap jusitfy-content-between align-items-center mt-md-4" 
+            className="d-md-flex flex-wrap jusitfy-content-between align-items-center mt-md-4" 
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-anchor-placement="top-bottom">
@@ -241,11 +246,14 @@ const Home = ()=> {
             
         </div>
         <div 
-            className="text-center mx-auto mt-3 mt-md-5"
+            className="text-center mx-auto mt-3 mt-md-5 col-md-5"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-anchor-placement="top-bottom">
-            <AppButton title="Découvrir tous les combats" />
+            <AppButton 
+                title="Découvrir tous les combats"
+                className="w-100 py-3 mt-4 mt-md-3"
+                 />
         </div>
       </div>
 
@@ -258,26 +266,33 @@ const Home = ()=> {
             slidesheader={slidesHeader2} 
             showButton={false}
             />
-        <div className=" join-us-actions gap-2 d-flex justify-content-around align-items-center container">
+        <div className=" join-us-actions gap-2 d-md-flex justify-content-around align-items-center container">
             <div className="text-center">
                 <h3>Nous rejoindre</h3>
                 <div className="d-flex">
                     
                     <Form.Control
-                        className='rounded-pill'
-                        style={{ }}
+                        className='rounded-pill py-0'
                         placeholder="Votre email"
                         aria-label="email"
                         aria-describedby="basic-addon1"
         />
-                    <AppButton title="JE M'ABONNE A LA NEWSLETTER" />
+                    <AppButton 
+                        title="JE M'ABONNE A LA NEWSLETTER"
+                        className="w-100 py-md-1 py-4 mt-4 mt-md-3"
+                         />
                 </div>
             </div>
-            <div className="text-center"  >
+            <div className="text-center mt-md-0 mt-5"  >
                 <h3>Agir ensemble</h3>
                 <div className="d-flex mt-2">
-                    <AppButton title="JE SOUTIENS UNE COMPAGNIE" />
-                    <AppButton title="JE FAIS UN DON" />
+                    <AppButton 
+                        title="JE SOUTIENS UNE COMPAGNIE"
+                        className="w-100 py-md-1 py-4  mt-4 mt-md-3"
+                         />
+                    <AppButton 
+                        title="JE FAIS UN DON"
+                        className="w-100 py-md-1 py-4  mt-4 mt-md-3" />
                 </div>
             </div>
         </div>

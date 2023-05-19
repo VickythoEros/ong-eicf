@@ -152,7 +152,7 @@ const Projects = ()=>{
                     </p>
                 </div>  
 
-                <div className="d-flex flex-wrap jusitfy-content-between align-items-center actions-lists">
+                <div className="d-md-flex flex-wrap jusitfy-content-between align-items-center actions-lists">
                     {
                     actions?.map(({ville,date,img,contenu},index)=>(
                         <CardAction 

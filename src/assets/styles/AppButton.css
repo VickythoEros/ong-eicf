@@ -33,15 +33,6 @@ button.donate-button:hover{
 
 
 
-@media only screen and (max-width: 992px) {
-  
-  button.donate-button ,button.app-button{
-    font-size: 10px;
-    padding: 0.1rem 0.5rem;
-  }
-}
-
-
 button.app-button-rapport {
   border-radius: 100rem;
   font-weight: bold;
@@ -71,3 +62,13 @@ button.app-button-rapport:hover {
 
 }
 
+
+
+
+@media only screen and (max-width: 992px) {
+  
+  button.donate-button ,button.app-button{
+    font-size: 10px;
+    padding: 0.1rem 0.5rem;
+  }
+}

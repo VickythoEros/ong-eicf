@@ -2,8 +2,14 @@
 .card-action{
     transition:all 0.5s ease-in-out;
     position: relative;
-    width: 30%;
+    margin: 0 10px;
+    flex: 1;
+    flex-basis: calc(33.33% - 20px);
     transition: transform 0.3s ease;
+    -webkit-transition: transform 0.3s ease;
+    -moz-transition: transform 0.3s ease;
+    -ms-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
 }
 
 
@@ -108,3 +114,35 @@
     font-family: Fira Sans Condensed,sans-serif;
     font-style: normal;
 }
+
+
+
+/*
+@media screen and (max-width: 1200px) {
+    .card-action{
+        transition:all 0.5s ease-in-out;
+        position: relative;
+        flex-basis: 48%;
+        transition: transform 0.3s ease;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-action{
+        transition:all 0.5s ease-in-out;
+        position: relative;
+        flex-basis: 95%;
+        transition: transform 0.3s ease;
+        border: 3px solid yellow;
+    }
+}
+
+*/
+
+@media screen and (max-width: 768px) {
+    
+    .card-action {
+      flex-basis: calc(33.33% - 20px);
+      margin: 10px;
+    }
+  }

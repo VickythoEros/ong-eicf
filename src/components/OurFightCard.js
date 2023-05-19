@@ -7,7 +7,7 @@ const OurFightCard =  ({title,imageSrc})=>{
 
     return(
         <div 
-            className="card-action our-fight-card mx-3 shadow rounded" 
+            className="card-action our-fight-card mx-3 mt-4 shadow rounded" 
         >
             <img src={imageSrc} alt="fight" className="img-fluid"  />
             <div className="our-fight-card-overlay rounded"  ></div>

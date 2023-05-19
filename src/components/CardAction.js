@@ -1,8 +1,6 @@
-
-import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import "assets/styles/CardAction.css"
 import { Button } from "@chakra-ui/react";
+import "assets/styles/CardAction.css"
 
 const CardAction =  ({date,ville,contenu,link,img})=>{
     const navigate = useNavigate();
@@ -13,13 +11,13 @@ const CardAction =  ({date,ville,contenu,link,img})=>{
     }
 
     return(
-        <>
         <div 
-            className="card-action shadow mt-4 mx-md-3 rounded-4"
+            className="card-action shadow mt-4  rounded-4"
             onClick={showActionDetails}
             data-aos="fade-up"
             data-aos-duration="1000"
-            data-aos-anchor-placement="top-bottom">
+            data-aos-anchor-placement="top-bottom"
+            >
             <div>
                 <div className="card-action-image-container">
                     <img src={img} alt="ONG EICF" className="img-fluid mx-auto w-100 rounded-top" />
@@ -36,6 +34,7 @@ const CardAction =  ({date,ville,contenu,link,img})=>{
                 </div>
                 <div className="btn-container w-100 px-3">
                         <Button 
+                            onClick={()=>showActionDetails()}
                             style={{color:'var(--color-primary-yellow)'}}
                             colorScheme='var(--color-primary-yellow)' 
                             className="rounded-pill w-100 py-4 "
@@ -45,7 +44,6 @@ const CardAction =  ({date,ville,contenu,link,img})=>{
                     </div>
             </div>
         </div>
-        </>
     )
 }
 
